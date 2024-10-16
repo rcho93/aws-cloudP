@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Serverless web app
+
+Resources:
+  LambdaFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: com.aws.example.Handler::handleRequest
+      Runtime: java21
+      CodeUri: ./
+      Policies:
+        - AmazonDynamoDBFullAccess
+      Events:
+        ApiGatewayEvent:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ServerlessApi
+            Path: /product
+            Method: GET
+
+  ServerlessApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: prod
+      Cors:
+        AllowHeaders: "'Content-Type'"
+        AllowMethods: "'GET,OPTIONS'"
+        AllowOrigin: "'*'"
+
+Outputs:
+  ServerlessApiUrl:
+    Description: "URL for the API Gateway"
+    Value: !Sub "https://6w5sx4fued.execute-api.us-west-2.amazonaws.com/prod/product"
