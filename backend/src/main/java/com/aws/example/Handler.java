@@ -38,13 +38,9 @@ public class Handler implements RequestHandler<Map<String,Object>, Map<String, O
 
         try {
             String partitionKey = "counter";
-            logger.log("Attempting to get table");
             Table table = client.getTable(tableName);
-            logger.log("Table retrieved: " + table);
             GetItemSpec spec = new GetItemSpec().withPrimaryKey("id", partitionKey);
-            logger.log("Getting item with partitionKey: " + spec);
             Item item = table.getItem(spec);
-            logger.log("Item retrieved: " + item);
 
             if (item == null) {
                 logger.log("Item with id 'counter' not found");
