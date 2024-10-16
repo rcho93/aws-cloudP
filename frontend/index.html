@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!---------------   HEADER ------------->
+    <header id="header">
+      <nav>
+        <ul>
+          <li><a href="#" data-target="about">About</a></li>
+          <li><a href="#" data-target="education">Education</a></li>
+          <li><a href="#" data-target="experience">Experience</a></li>
+          <li><a href="#" data-target="projects">Projects</a></li>
+          <li><a href="#" data-target="skills">Skills</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!---------------------  PROFILE SECTION  ------------------>
+    <section id="profile">
+      <!------  JACKSON PICTURE  ------->
+      <div class="section__pic-container">
+        <img
+          src="https://d2z5u6cko8phsi.cloudfront.net/jackson.jpg"
+          alt="Ryan
+        Cho profile picture"
+        />
+      </div>
+
+      <!-----  TEXT SECTIONS  -------->
+      <div class="section__text">
+        <!-- intro text messages -->
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ryan Cho</h1>
+        <span class="section__multiText"></span>
+
+        <!--- button links to resume & contact info --->
+        <div class="btn_container">
+          <button
+            class="btn btn-color-2"
+            onClick="window.open('https://d2z5u6cko8phsi.cloudfront.net/resume.pdf')"
+          >
+            View Resume
+          </button>
+          <button
+            class="btn btn-color-2"
+            onClick="location.href='mailto:csw9933@gmail.com'"
+          >
+            Email Me
+          </button>
+        </div>
+
+        <!----- icons links to linkedin & github page ------>
+        <div id="socials-container">
+          <img
+            src="https://d2z5u6cko8phsi.cloudfront.net/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onClick="location.href='https://www.linkedin.com/in/ryan-cho-b17251247/'"
+          />
+
+          <img
+            src="https://d2z5u6cko8phsi.cloudfront.net/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onClick="location.href='https://github.com/rcho93'"
+          />
+        </div>
+
+        <div id="visitor-cnt">Visitors:</div>
+      </div>
+    </section>
+
+    <!------- about page -------->
+    <section id="about">
+      <div class="about-container">
+        <button class="close-btn" onClick="location.href='./#header'">
+          &times;
+        </button>
+        <h2 class="major">ABOUT</h2>
+        <div class="about-contents">
+          <!-- image  -->
+          <img
+            src="https://d2z5u6cko8phsi.cloudfront.net/aboutme_pic.jpg"
+            alt="About_pic"
+          />
+
+          <!-- about me texts  -->
+          <p>Welcome,</p>
+        </div>
+      </div>
+    </section>
+
+    <!---- education page ----->
+    <section id="education">
+      <div class="education-container">
+        <button class="close-btn" onClick="location.href='./#header'">
+          &times;
+        </button>
+        <h2 class="major">EDUCATION</h2>
+      </div>
+    </section>
+
+    <!-- experience section -->
+    <section id="experience">
+      <div class="experience-container">
+        <button class="close-btn" onClick="location.href='./#header'">
+          &times;
+        </button>
+        <h2 class="major">EXPERIENCE</h2>
+        <h3>FINANCIAL MANAGEMENT TECHNICIAN</h3>
+        <h4>US ARMY</h4>
+        <p>
+          "Oct 2024 - Present"
+          <br />
+          Lakewood, Washington, US
+        </p>
+      </div>
+    </section>
+
+    <!--- project section --->
+    <section id="projects">
+      <div class="project-container">
+        <button class="close-btn" onClick="location.href='./#header'">
+          &times;
+        </button>
+        <h2 class="major">PROJECTS</h2>
+        <h3>Project ONE</h3>
+        <div class="btn-container">
+          <button class="btn btn-color-1 project-btn" onclick="">Github</button>
+          <button class="btn btn-color-1 project-btn" onclick="">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--- skill section  -->
+    <section id="skills">
+      <div class="skill-container">
+        <button class="close-btn" onClick="location.href='./#header'">
+          &times;
+        </button>
+        <h2 class="major">SKILLS & CERTIFICATIONS</h2>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typingEffect = new Typed(".section__multiText", {
+        strings: ["cs student @ UW .", "Programmer ."],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 150,
+      });
+    </script>
+  </body>
+</html>
