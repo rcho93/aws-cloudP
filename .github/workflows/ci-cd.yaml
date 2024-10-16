@@ -41,10 +41,9 @@ jobs:
           SOURCE_DIR: frontend
       - name: Invalidate Cloundfront
         uses: chetan/invalidate-cloudfront-action@v2
-        with:
-          distribution: E1UAXMQXZ19YVU
-          paths: "/*"
         env:
+          DISTRIBUTION: E1UAXMQXZ19YVU
+          PATHS: "/*"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "us-west-2"
