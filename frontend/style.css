@@ -12,6 +12,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: grey;
   overflow: hidden;
+  background-image: url("https://d2z5u6cko8phsi.cloudfront.net/assets/background.jpg");
 }
 
 html {
