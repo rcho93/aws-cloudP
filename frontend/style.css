@@ -139,7 +139,7 @@ section {
 .section__multiText {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: purple;
+  color: rgb(123, 236, 111);
   text-transform: capitalize;
 }
 
