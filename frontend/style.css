@@ -12,20 +12,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: grey;
   overflow: hidden;
-  /* background-image: url("https://d2z5u6cko8phsi.cloudfront.net/assets/background.jpg");
+  background-image: url("https://d2z5u6cko8phsi.cloudfront.net/assets/background.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+  background-size: cover;
 }
 
 html {
