@@ -53,7 +53,7 @@ header ul {
 }
 
 a {
-  color: black;
+  color: rgb(90, 220, 230);
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -125,6 +125,11 @@ section {
 .section__text {
   align-self: center;
   text-align: center;
+  color: rgb(90, 220, 230);
+}
+
+.section__text h1 {
+  color: white;
 }
 
 .section__text p {
@@ -133,13 +138,13 @@ section {
 
 .section__text__p1 {
   text-align: center;
-  color: black;
+  color: rgb(90, 220, 230);
 }
 
 .section__multiText {
   font-size: 1.75rem;
   margin-bottom: 1rem;
-  color: rgb(123, 236, 111);
+  color: rgb(90, 220, 230);
   text-transform: capitalize;
 }
 
@@ -180,7 +185,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(90, 220, 230) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -200,6 +205,7 @@ section {
 
 .btn-color-2 {
   background: none;
+  color: white;
 }
 
 .btn-color-2:hover {
@@ -211,14 +217,15 @@ section {
 }
 
 .close-btn {
-  position: absolute; /* This makes the close button stay within the container */
-  top: 10px; /* Distance from the top of the container */
-  right: 10px; /* Distance from the right side of the container */
+  position: absolute;
+  top: 10px;
+  right: 10px;
   font-size: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 100; /* Make sure it is always on top of the content */
+  z-index: 100;
+  color: white;
 }
 
 /* ABOUT SECTION */
@@ -233,8 +240,8 @@ section {
   padding: 1.5rem;
   text-align: center;
   border: 0.2rem solid;
-  border-color: black;
-  color: white;
+  border-color: rgb(90, 220, 230);
+  color: rgb(90, 220, 230);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -280,8 +287,8 @@ section {
   border-radius: 0.5rem;
   padding: 1.5rem;
   border: 0.2rem solid;
-  border-color: black;
-  color: white;
+  border-color: rgb(90, 220, 230);
+  color: rgb(90, 220, 230);
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
@@ -300,8 +307,8 @@ section {
   border-radius: 0.5rem;
   padding: 1.5rem;
   border: 0.2rem solid;
-  border-color: black;
-  color: white;
+  border-color: rgb(90, 220, 230);
+  color: rgb(90, 220, 230);
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
@@ -320,8 +327,8 @@ section {
   border-radius: 0.5rem;
   padding: 1.5rem;
   border: 0.2rem solid;
-  border-color: black;
-  color: white;
+  border-color: rgb(90, 220, 230);
+  color: rgb(90, 220, 230);
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
@@ -340,8 +347,8 @@ section {
   border-radius: 0.5rem;
   padding: 1.5rem;
   border: 0.2rem solid;
-  border-color: black;
-  color: white;
+  border-color: rgb(90, 220, 230);
+  color: rgb(90, 220, 230);
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
