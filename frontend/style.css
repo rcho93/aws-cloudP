@@ -288,12 +288,18 @@ section {
   padding: 1.5rem;
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
-  color: rgb(90, 220, 230);
+  color: white;
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+}
+
+.education-container ul {
+  list-style: disc;
+  margin: 0 0 2rem 0;
+  padding-left: 1em;
 }
 
 /* EXPERIENCE SECTION */
@@ -308,7 +314,7 @@ section {
   padding: 1.5rem;
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
-  color: rgb(90, 220, 230);
+  color: white;
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
@@ -348,10 +354,16 @@ section {
   padding: 1.5rem;
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
-  color: rgb(90, 220, 230);
+  color: white;
   margin: 0 4rem;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+}
+
+.skill-container ul {
+  list-style: disc;
+  margin: 0 0 2rem 0;
+  padding-left: 1em;
 }
