@@ -247,9 +247,11 @@ section {
   flex-direction: column;
   position: relative;
 
-  width: 80%;
-  height: auto;
+  width: 60%;
+
   box-sizing: border-box;
+  overflow-y: auto;
+  max-height: 80%;
 }
 
 .about-container p {
@@ -289,11 +291,14 @@ section {
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
   color: white;
-  margin: 0 4rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+  font-size: 1.2rem;
+
+  width: 35%;
 }
 
 .education-container ul {
@@ -315,11 +320,13 @@ section {
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
   color: white;
-  margin: 0 4rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+
+  width: 35%;
 }
 
 /* PROJECT SECTION */
@@ -334,12 +341,15 @@ section {
   padding: 1.5rem;
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
-  color: rgb(90, 220, 230);
-  margin: 0 4rem;
+  color: white;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+
+  width: 35%;
+  text-align: center;
 }
 
 /* SKILL SECTION */
@@ -355,11 +365,13 @@ section {
   border: 0.2rem solid;
   border-color: rgb(90, 220, 230);
   color: white;
-  margin: 0 4rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   line-height: 2rem;
   position: relative;
+
+  width: 35%;
 }
 
 .skill-container ul {
