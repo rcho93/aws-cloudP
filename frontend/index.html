@@ -10,7 +10,7 @@
   <body>
     <!---------------   HEADER ------------->
     <header id="header">
-      <nav>
+      <nav id="desktop">
         <ul>
           <li><a href="#" data-target="about">About</a></li>
           <li><a href="#" data-target="education">Education</a></li>
@@ -18,6 +18,26 @@
           <li><a href="#" data-target="projects">Projects</a></li>
           <li><a href="#" data-target="skills">Skills</a></li>
         </ul>
+      </nav>
+
+      <nav id="menu">
+        <div class="menu-box">
+          <!-- Menu Icon -->
+          <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+          <!-- Menu Links -->
+          <ul class="menu-links">
+            <li><a href="#" data-target="about">About</a></li>
+            <li><a href="#" data-target="education">Education</a></li>
+            <li><a href="#" data-target="experience">Experience</a></li>
+            <li><a href="#" data-target="projects">Projects</a></li>
+            <li><a href="#" data-target="skills">Skills</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -198,7 +218,7 @@
           &times;
         </button>
         <h2 class="major" style="color: rgb(90, 220, 230);">SKILLS & CERTIFICATIONS</h2>
-        <h3 style="letter-spacing: .5rem;">SkILLS: </h4>
+        <h3 style="letter-spacing: .5rem;">SKILLS: </h4>
         <ul>
           <li>Amazon Web services (AWS)</li>
           <li>HTML/CSS</li>

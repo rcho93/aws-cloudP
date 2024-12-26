@@ -1,51 +1,42 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
   }
+
   .about-containers {
     flex-wrap: wrap;
   }
+
   #contact,
   #projects {
     height: fit-content;
   }
 }
-/*
-@media screen and (max-width: 1200px) {
-  #desktop-nav {
+
+@media screen and (max-width: 500px) {
+  #profile {
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  .section__pic-container {
+    width: 350px;
+    height: 350px;
+    margin: 1.5rem auto;
+    padding-bottom: 4rem;
+  }
+
+  #desktop {
     display: none;
   }
-  #hamburger-nav {
+
+  #menu {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: block;
-  }
-  .arrow {
-    display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
-  }
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
-  }
 }
+
+/*
 
 @media screen and (max-width: 600px) {
   #contact,
