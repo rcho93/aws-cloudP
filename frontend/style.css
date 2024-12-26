@@ -106,11 +106,10 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
-  display: none;
 }
 
 .menu-links a {
-  display: none;
+  display: block;
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
