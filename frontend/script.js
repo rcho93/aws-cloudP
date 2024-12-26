@@ -3,7 +3,6 @@ function toggleMenu() {
   const icon = document.querySelector(".menu-icon");
   const picContainer = document.querySelector(".section__pic-container");
 
-  // Toggle the 'open' class for menu and icon
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 

@@ -106,6 +106,7 @@ a:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  display: none;
 }
 
 .menu-links a {
