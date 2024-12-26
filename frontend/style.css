@@ -110,7 +110,7 @@ a:hover {
 }
 
 .menu-links a {
-  display: block;
+  display: none;
   padding: 10px;
   text-align: center;
   font-size: 1.5rem;
