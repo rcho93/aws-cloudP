@@ -24,6 +24,10 @@
 
 This is my repo for <a href="https://cloudresumechallenge.dev/docs/the-challenge/aws/">AWS Cloud Resume Challenge</a>, created by Forrest Brazea. The project is a full-stack application that consists of a static website hosted on S3, a DynamoDB database for storing visitor counts, and a backend API powered by AWS Lambda and API Gateway to handle requests.
 
+### Diagram
+
+![alt text](image.png)
+
 ### Built With
 
 The project incorporates the following AWS resources:
