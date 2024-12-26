@@ -26,7 +26,7 @@ This is my repo for <a href="https://cloudresumechallenge.dev/docs/the-challenge
 
 ### Diagram
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ### Built With
 
