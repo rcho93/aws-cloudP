@@ -60,15 +60,16 @@ To track the number of visitors to my website, serverless backend is built, whic
 - **Amazon API Gateway:** This service acts as the API's entry point, handling client requests and forwarding them to a Lambda function. It provides a single GET route, which forwards requests from the frontend to the Lambda function. This design ensures the frontend never communicates directly with DynamoDB
     #### API Workflow
     ![alt text](image-2.png)
+
 - **AWS Lambda:** Java-based Lambda function is written to interact with DynamoDB. This function updates and retrieves the visitor count.
 - **Amazon DynamoDB:** This serverless NoSQL database stores the visitor count.
 
 ### Stage 3 - CI/CD
 
 To streamline the deployment process, CI/CD pipeline is implemented using GitHub Actions. The pipeline automates the deployment of both the backend and frontend components whenever changes are pushed to the repository: 
-- ## The pipeline validates and deploys the SAM template, which provisions resources like API Gateway, Lambda, and DynamoDB.##
-- ## Updates to the static website files (HTML, CSS, JavaScript) are synchronized with the S3 bucket.##
-- ## CloudFront cache invalidation is triggered to ensure updated files are served immediately.##
+- The pipeline validates and deploys the SAM template, which provisions resources like API Gateway, Lambda, and DynamoDB.
+- Updates to the static website files (HTML, CSS, JavaScript) are synchronized with the S3 bucket.
+- CloudFront cache invalidation is triggered to ensure updated files are served immediately.
 
 <!-- GETTING STARTED -->
 
