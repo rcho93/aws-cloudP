@@ -4,7 +4,7 @@
 
   <ol>
     <li>
-      <a href="#about-the-project">AWS Cloud Resume Challenge</a>
+      <a href="#aws-cloud-resume-challenge">AWS Cloud Resume Challenge</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
