@@ -11,7 +11,7 @@
     <li>
       <a href="#challenge-stages">Challenge Stages</a>
       <ul>
-        <li><a href="#stage1">Stage 1</a></li>
+        <li><a href="#stage-1---developing-frontend">Stage 1</a></li>
         <li><a href="#stage2">Stage 1</a></li>
         <li><a href="#stage3">Stage 1</a></li>
       </ul>
