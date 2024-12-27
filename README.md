@@ -47,7 +47,7 @@ The project incorporates the following AWS resources:
 
 ### Stage 1 - Developing Frontend ###
 
-For the Front end, I used basic HTML, CSS, and JavaScript to create a resume page.
+For the Front end, HTML, CSS, and JavaScript are used to create a resume page.
 The Front end has been deployed by using following AWS services: 
 - **Amazon S3:** The static website is hosted in an S3 bucket configured with static website hosting. I ensured all public access was blocked, and access was restricted to CloudFront.
 - **Amazon Cloudfront:** CloudFront distribution is set to deliver my content through a Content Delivery Network (CDN), which improves load times and adds HTTPS security.
