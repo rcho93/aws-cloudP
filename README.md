@@ -9,6 +9,14 @@
       </ul>
     </li>
     <li>
+      <a href="#challenge-stages">Challenge Stages</a>
+      <ul>
+        <li><a href="#stage1">Stage 1</a></li>
+        <li><a href="#stage2">Stage 1</a></li>
+        <li><a href="#stage3">Stage 1</a></li>
+      </ul>
+    </li>
+    <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
@@ -43,30 +51,36 @@ The project incorporates the following AWS resources:
 - **AWS SAM** Serverless Application Model to deploy the infrastructure as code
 
 <!-- STAGES -->
-## Challenge Stages ##
 
-### Stage 1 - Developing Frontend ###
+## Challenge Stages
+
+### Stage 1 - Developing Frontend
 
 For the Front end, HTML, CSS, and JavaScript are used to create a resume page.
-The Front end has been deployed by using following AWS services: 
+The Front end has been deployed by using following AWS services:
+
 - **Amazon S3:** The static website is hosted in an S3 bucket configured with static website hosting. I ensured all public access was blocked, and access was restricted to CloudFront.
 - **Amazon Cloudfront:** CloudFront distribution is set to deliver my content through a Content Delivery Network (CDN), which improves load times and adds HTTPS security.
 - **Amazon Route 53:** Custom domain cho93.com is registered with Route 53 and mapped it to the CloudFront distribution using DNS records. This ensured visitors could access the site via my custom domain.
 - **AWS Certificate Manager (ACM):** SSL/TLS certificate is requested and deployed to secure the website with HTTPS. This certificate is integrated with CloudFront for seamless encryption.
 
-### Stage 2 - Developing Backend ###
+### Stage 2 - Developing Backend
 
 To track the number of visitors to my website, serverless backend is built, which provides a REST API to update and retrieve visitor counts. The backend components include:
+
 - **Amazon API Gateway:** This service acts as the API's entry point, handling client requests and forwarding them to a Lambda function. It provides a single GET route, which forwards requests from the frontend to the Lambda function. This design ensures the frontend never communicates directly with DynamoDB
-    #### API Workflow
-    ![alt text](image-2.png)
+
+  #### API Workflow
+
+  ![alt text](image-2.png)
 
 - **AWS Lambda:** Java-based Lambda function is written to interact with DynamoDB. This function updates and retrieves the visitor count.
 - **Amazon DynamoDB:** This serverless NoSQL database stores the visitor count.
 
 ### Stage 3 - CI/CD
 
-To streamline the deployment process, CI/CD pipeline is implemented using GitHub Actions. The pipeline automates the deployment of both the backend and frontend components whenever changes are pushed to the repository: 
+To streamline the deployment process, CI/CD pipeline is implemented using GitHub Actions. The pipeline automates the deployment of both the backend and frontend components whenever changes are pushed to the repository:
+
 - The pipeline validates and deploys the SAM template, which provisions resources like API Gateway, Lambda, and DynamoDB.
 - Updates to the static website files (HTML, CSS, JavaScript) are synchronized with the S3 bucket.
 - CloudFront cache invalidation is triggered to ensure updated files are served immediately.
