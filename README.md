@@ -1,6 +1,7 @@
 <!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
+
+## Table of Contents
+
   <ol>
     <li>
       <a href="#about-the-project">AWS Cloud Resume Challenge</a>
@@ -12,8 +13,8 @@
       <a href="#challenge-stages">Challenge Stages</a>
       <ul>
         <li><a href="#stage-1---developing-frontend">Stage 1</a></li>
-        <li><a href="#stage2">Stage 1</a></li>
-        <li><a href="#stage3">Stage 1</a></li>
+        <li><a href="#stage-2---developing-backend">Stage 2</a></li>
+        <li><a href="#stage-3---ci/cd">Stage 3</a></li>
       </ul>
     </li>
     <li>
@@ -24,7 +25,6 @@
       </ul>
     </li>
   </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 
